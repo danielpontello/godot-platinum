@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=43 format=3 uid="uid://dt8ovtnd8vbcm"]
+[gd_resource type="Theme" load_steps=46 format=3 uid="uid://dt8ovtnd8vbcm"]
 
 [ext_resource type="FontFile" uid="uid://t0yl6rbm8y0k" path="res://os9/Charcoal.ttf" id="1_hrjf4"]
 [ext_resource type="StyleBox" uid="uid://bk6rtgcxs1e2" path="res://os9/button/button_disabled.tres" id="2_torwm"]
@@ -52,6 +52,13 @@ bg_color = Color(0.866667, 0.866667, 0.866667, 1)
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vijuc"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r8r14"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qxk7k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ekw7q"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spx3h"]
+bg_color = Color(0.2, 0.2, 0.6, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rwucp"]
 bg_color = Color(0.866667, 0.866667, 0.866667, 1)
@@ -116,6 +123,13 @@ LineEdit/fonts/font = ExtResource("1_hrjf4")
 LineEdit/styles/focus = ExtResource("7_r48yp")
 LineEdit/styles/normal = ExtResource("5_v1ra7")
 LineEdit/styles/read_only = ExtResource("9_nnlvd")
+MenuBar/colors/font_color = Color(0, 0, 0, 1)
+MenuBar/colors/font_hover_color = Color(0, 0, 0, 1)
+MenuBar/constants/h_separation = 16
+MenuBar/font_sizes/font_size = 20
+MenuBar/styles/hover = SubResource("StyleBoxEmpty_qxk7k")
+MenuBar/styles/normal = SubResource("StyleBoxEmpty_ekw7q")
+MenuBar/styles/pressed = SubResource("StyleBoxFlat_spx3h")
 MenuButton/colors/font_pressed_color = Color(0, 0, 0, 1)
 OptionButton/constants/arrow_margin = 14
 OptionButton/icons/arrow = ExtResource("19_qtod5")

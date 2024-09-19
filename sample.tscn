@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://xmfysi3mvxcg"]
+[gd_scene load_steps=3 format=3 uid="uid://xmfysi3mvxcg"]
 
 [ext_resource type="Theme" uid="uid://dt8ovtnd8vbcm" path="res://os9/os9.tres" id="1_ah7bm"]
+[ext_resource type="StyleBox" uid="uid://yx2uvxo4off1" path="res://os9/mainmenu/mainmenu.tres" id="2_rrmxh"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -19,6 +20,97 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.6, 0.6, 0.8, 1)
+
+[node name="MainMenu" type="Panel" parent="."]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 48.0
+grow_horizontal = 2
+theme_override_styles/panel = ExtResource("2_rrmxh")
+
+[node name="MarginContainer2" type="MarginContainer" parent="MainMenu"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 20
+
+[node name="Clock" type="Label" parent="MainMenu/MarginContainer2"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+text = "10:39
+"
+horizontal_alignment = 2
+vertical_alignment = 1
+clip_text = true
+
+[node name="MarginContainer" type="MarginContainer" parent="MainMenu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="MenuBar" type="MenuBar" parent="MainMenu/MarginContainer"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+
+[node name="File" type="PopupMenu" parent="MainMenu/MarginContainer/MenuBar"]
+title = "File"
+item_count = 3
+item_0/text = "Item 1"
+item_1/text = "Item 2"
+item_1/id = 1
+item_2/text = "Item 3"
+item_2/id = 2
+
+[node name="Edit" type="PopupMenu" parent="MainMenu/MarginContainer/MenuBar"]
+auto_translate_mode = 1
+title = "File"
+item_count = 3
+item_0/text = "Item 1"
+item_1/text = "Item 2"
+item_1/id = 1
+item_2/text = "Item 3"
+item_2/id = 2
+
+[node name="View" type="PopupMenu" parent="MainMenu/MarginContainer/MenuBar"]
+auto_translate_mode = 1
+title = "File"
+item_count = 3
+item_0/text = "Item 1"
+item_1/text = "Item 2"
+item_1/id = 1
+item_2/text = "Item 3"
+item_2/id = 2
+
+[node name="Special" type="PopupMenu" parent="MainMenu/MarginContainer/MenuBar"]
+auto_translate_mode = 1
+title = "File"
+item_count = 3
+item_0/text = "Item 1"
+item_1/text = "Item 2"
+item_1/id = 1
+item_2/text = "Item 3"
+item_2/id = 2
+
+[node name="Help" type="PopupMenu" parent="MainMenu/MarginContainer/MenuBar"]
+auto_translate_mode = 1
+title = "File"
+item_count = 3
+item_0/text = "Item 1"
+item_1/text = "Item 2"
+item_1/id = 1
+item_2/text = "Item 3"
+item_2/id = 2
 
 [node name="Window" type="Window" parent="."]
 title = "Widget Samples"
