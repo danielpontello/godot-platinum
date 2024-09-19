@@ -1,0 +1,10 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://tfkyklrlqm8x"]
+
+[ext_resource type="Texture2D" uid="uid://cwp4a60iexaip" path="res://os9/scrollbar/scrollbar_grabber_idle.png" id="1_io7e2"]
+
+[resource]
+texture = ExtResource("1_io7e2")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0

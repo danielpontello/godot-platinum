@@ -1,0 +1,8 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://b5a2hnkk4rx1"]
+
+[ext_resource type="Texture2D" uid="uid://cj570cdylts5r" path="res://os9/tabview/tab_selected.png" id="1_phgy4"]
+
+[resource]
+texture = ExtResource("1_phgy4")
+texture_margin_left = 24.0
+texture_margin_right = 24.0

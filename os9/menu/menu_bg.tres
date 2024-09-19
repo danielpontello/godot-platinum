@@ -1,0 +1,10 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://cjuor1a8rnv0b"]
+
+[ext_resource type="Texture2D" uid="uid://d22bkvndaho8w" path="res://os9/menu/menu_bg.png" id="1_wtr8r"]
+
+[resource]
+texture = ExtResource("1_wtr8r")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 8.0
+texture_margin_bottom = 8.0
