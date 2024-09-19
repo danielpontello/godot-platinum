@@ -29,7 +29,7 @@
 [ext_resource type="StyleBox" uid="uid://8se0evf5ynb3" path="res://os9/window/window_frame_idle.tres" id="27_1s4gj"]
 [ext_resource type="Texture2D" uid="uid://dak67ylqimnky" path="res://os9/window/window_close_idle.png" id="27_dn8nl"]
 [ext_resource type="Texture2D" uid="uid://bquhyaoknhmso" path="res://os9/window/window_close_pressed.png" id="28_cijjb"]
-[ext_resource type="StyleBox" uid="uid://d34hfm0287os2" path="res://os9/window/window_frame_unselected.tres" id="28_o1nbn"]
+[ext_resource type="StyleBox" uid="uid://bbijd6d31wqyf" path="res://os9/window/window_frame_unselected.tres" id="28_o1nbn"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5sbs1"]
 bg_color = Color(0.866667, 0.866667, 0.866667, 1)
