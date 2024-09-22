@@ -1,6 +1,5 @@
-[gd_resource type="Theme" load_steps=46 format=3 uid="uid://dt8ovtnd8vbcm"]
+[gd_resource type="Theme" load_steps=53 format=3 uid="uid://dt8ovtnd8vbcm"]
 
-[ext_resource type="FontFile" uid="uid://t0yl6rbm8y0k" path="res://os9/Charcoal.ttf" id="1_hrjf4"]
 [ext_resource type="StyleBox" uid="uid://bk6rtgcxs1e2" path="res://os9/button/button_disabled.tres" id="2_torwm"]
 [ext_resource type="StyleBox" uid="uid://c1w5kvrtjs0ur" path="res://os9/button/button_idle.tres" id="2_u83rv"]
 [ext_resource type="StyleBox" uid="uid://biug84e1ixjuj" path="res://os9/button/button_pressed.tres" id="3_0fdsu"]
@@ -24,12 +23,19 @@
 [ext_resource type="Texture2D" uid="uid://cubg7tfjnuhyk" path="res://os9/checkbox/checkbox_indeterminate.png" id="21_svbie"]
 [ext_resource type="StyleBox" uid="uid://tfkyklrlqm8x" path="res://os9/scrollbar/scrollbar_grabber_idle.tres" id="22_6gntq"]
 [ext_resource type="StyleBox" uid="uid://c1kbn3yn30d8l" path="res://os9/scrollbar/scrollbar_background.tres" id="22_irr5u"]
+[ext_resource type="FontFile" uid="uid://cx3onj2r1mdn4" path="res://os9/fonts/geneva_9.ttf" id="24_8jrl1"]
 [ext_resource type="StyleBox" uid="uid://soabchpkwbes" path="res://os9/progressbar/progressbar_fill.tres" id="25_2jlu8"]
 [ext_resource type="Texture2D" uid="uid://h2yhvict1im8" path="res://os9/slider/slider_vertical_grabber_idle.png" id="26_72wpg"]
+[ext_resource type="StyleBox" uid="uid://dmft4fvy8i5l4" path="res://os9/tree/tree_title_pressed.tres" id="26_gxtm5"]
 [ext_resource type="StyleBox" uid="uid://8se0evf5ynb3" path="res://os9/window/window_frame_idle.tres" id="27_1s4gj"]
 [ext_resource type="Texture2D" uid="uid://dak67ylqimnky" path="res://os9/window/window_close_idle.png" id="27_dn8nl"]
+[ext_resource type="StyleBox" uid="uid://bx8uuhed8klvk" path="res://os9/tree/tree_title_idle.tres" id="27_oxthi"]
 [ext_resource type="Texture2D" uid="uid://bquhyaoknhmso" path="res://os9/window/window_close_pressed.png" id="28_cijjb"]
 [ext_resource type="StyleBox" uid="uid://bbijd6d31wqyf" path="res://os9/window/window_frame_unselected.tres" id="28_o1nbn"]
+[ext_resource type="FontFile" uid="uid://bf1rkcomkjys0" path="res://os9/fonts/pixChicago.ttf" id="31_oi8hn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ngkq8"]
+bg_color = Color(0.866667, 0.866667, 0.866667, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5sbs1"]
 bg_color = Color(0.866667, 0.866667, 0.866667, 1)
@@ -66,20 +72,30 @@ bg_color = Color(0.866667, 0.866667, 0.866667, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k2evi"]
 bg_color = Color(0.2, 0.2, 0.6, 1)
 
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_rcnid"]
+color = Color(0.639216, 0.639216, 0.639216, 1)
+thickness = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ao3e5"]
+bg_color = Color(0.8, 0.8, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w12ra"]
+bg_color = Color(0.8, 0.8, 1, 1)
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4kmru"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ft5s7"]
 
 [resource]
-default_font = ExtResource("1_hrjf4")
-default_font_size = 20
+default_font = ExtResource("31_oi8hn")
+default_font_size = 16
+AcceptDialog/constants/buttons_min_width = 100
+AcceptDialog/styles/panel = SubResource("StyleBoxFlat_ngkq8")
 Button/colors/font_color = Color(0, 0, 0, 1)
 Button/colors/font_disabled_color = Color(0.431373, 0.431373, 0.431373, 1)
 Button/colors/font_focus_color = Color(0, 0, 0, 1)
 Button/colors/font_hover_color = Color(0, 0, 0, 1)
 Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-Button/font_sizes/font_size = 20
-Button/fonts/font = ExtResource("1_hrjf4")
 Button/styles/disabled = ExtResource("2_torwm")
 Button/styles/hover = ExtResource("2_u83rv")
 Button/styles/normal = ExtResource("2_u83rv")
@@ -111,22 +127,19 @@ HSlider/styles/grabber_area = SubResource("StyleBoxEmpty_vijuc")
 HSlider/styles/grabber_area_highlight = SubResource("StyleBoxEmpty_r8r14")
 HSlider/styles/slider = ExtResource("5_blo0q")
 Label/colors/font_color = Color(0, 0, 0, 1)
-Label/font_sizes/font_size = 20
-Label/fonts/font = ExtResource("1_hrjf4")
+Label/font_sizes/font_size = 32
+Label/fonts/font = ExtResource("24_8jrl1")
 LineEdit/colors/caret_color = Color(0, 0, 0, 1)
 LineEdit/colors/font_color = Color(0, 0, 0, 1)
 LineEdit/colors/font_selected_color = Color(1, 1, 1, 1)
 LineEdit/colors/font_uneditable_color = Color(0.431373, 0.431373, 0.431373, 1)
 LineEdit/colors/selection_color = Color(0.8, 0.8, 1, 1)
-LineEdit/font_sizes/font_size = 20
-LineEdit/fonts/font = ExtResource("1_hrjf4")
 LineEdit/styles/focus = ExtResource("7_r48yp")
 LineEdit/styles/normal = ExtResource("5_v1ra7")
 LineEdit/styles/read_only = ExtResource("9_nnlvd")
 MenuBar/colors/font_color = Color(0, 0, 0, 1)
 MenuBar/colors/font_hover_color = Color(0, 0, 0, 1)
 MenuBar/constants/h_separation = 16
-MenuBar/font_sizes/font_size = 20
 MenuBar/styles/hover = SubResource("StyleBoxEmpty_qxk7k")
 MenuBar/styles/normal = SubResource("StyleBoxEmpty_ekw7q")
 MenuBar/styles/pressed = SubResource("StyleBoxFlat_spx3h")
@@ -137,8 +150,6 @@ OptionButton/styles/normal = ExtResource("2_u83rv")
 Panel/styles/panel = SubResource("StyleBoxFlat_rwucp")
 PopupMenu/colors/font_color = Color(0, 0, 0, 1)
 PopupMenu/colors/font_hover_color = Color(1, 1, 1, 1)
-PopupMenu/font_sizes/font_size = 20
-PopupMenu/fonts/font = ExtResource("1_hrjf4")
 PopupMenu/icons/checked = ExtResource("5_8fq7o")
 PopupMenu/icons/radio_checked = ExtResource("5_bofsh")
 PopupMenu/icons/radio_unchecked = ExtResource("6_3oot0")
@@ -146,33 +157,40 @@ PopupMenu/icons/submenu = ExtResource("16_fyoqu")
 PopupMenu/icons/unchecked = ExtResource("17_m3ney")
 PopupMenu/styles/hover = SubResource("StyleBoxFlat_k2evi")
 PopupMenu/styles/panel = ExtResource("10_7vktx")
+PopupMenu/styles/separator = SubResource("StyleBoxLine_rcnid")
 PopupPanel/styles/panel = ExtResource("10_7vktx")
 ProgressBar/colors/font_color = Color(0.94902, 0.94902, 0.94902, 0)
-ProgressBar/font_sizes/font_size = 16
-ProgressBar/fonts/font = ExtResource("1_hrjf4")
 ProgressBar/styles/background = ExtResource("22_irr5u")
 ProgressBar/styles/fill = ExtResource("25_2jlu8")
+RichTextLabel/font_sizes/normal_font_size = 32
+RichTextLabel/fonts/normal_font = ExtResource("24_8jrl1")
 SpinBox/icons/updown = ExtResource("19_qtod5")
 TabContainer/styles/tab_selected = null
 TextEdit/colors/caret_color = Color(0, 0, 0, 1)
 TextEdit/colors/font_color = Color(0, 0, 0, 1)
 TextEdit/colors/selection_color = Color(0.8, 0.8, 1, 1)
-TextEdit/font_sizes/font_size = 20
-TextEdit/fonts/font = ExtResource("1_hrjf4")
 TextEdit/styles/focus = ExtResource("7_r48yp")
 TextEdit/styles/normal = ExtResource("5_v1ra7")
 Tree/colors/font_color = Color(0, 0, 0, 1)
 Tree/colors/font_selected_color = Color(0, 0, 0, 1)
+Tree/colors/title_button_color = Color(0, 0, 0, 1)
 Tree/constants/inner_item_margin_left = 8
 Tree/constants/item_margin = 24
-Tree/font_sizes/font_size = 20
-Tree/fonts/font = ExtResource("1_hrjf4")
+Tree/font_sizes/font_size = 32
+Tree/font_sizes/title_button_font_size = 32
+Tree/fonts/font = ExtResource("24_8jrl1")
+Tree/fonts/title_button_font = ExtResource("24_8jrl1")
 Tree/icons/arrow = ExtResource("19_q6lu5")
 Tree/icons/arrow_collapsed = ExtResource("20_xxvp7")
 Tree/icons/checked = ExtResource("5_8fq7o")
 Tree/icons/indeterminate = ExtResource("21_svbie")
 Tree/icons/unchecked = ExtResource("8_fb3u8")
 Tree/styles/panel = ExtResource("5_v1ra7")
+Tree/styles/selected = SubResource("StyleBoxFlat_ao3e5")
+Tree/styles/selected_focus = SubResource("StyleBoxFlat_w12ra")
+Tree/styles/title_button_hover = ExtResource("27_oxthi")
+Tree/styles/title_button_normal = ExtResource("27_oxthi")
+Tree/styles/title_button_pressed = ExtResource("26_gxtm5")
 VScrollBar/styles/grabber = ExtResource("22_6gntq")
 VScrollBar/styles/grabber_highlight = ExtResource("22_6gntq")
 VScrollBar/styles/grabber_pressed = ExtResource("10_d3v1p")

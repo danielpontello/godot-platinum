@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://xmfysi3mvxcg"]
+[gd_scene load_steps=5 format=3 uid="uid://xmfysi3mvxcg"]
 
 [ext_resource type="Theme" uid="uid://dt8ovtnd8vbcm" path="res://os9/os9.tres" id="1_ah7bm"]
+[ext_resource type="Texture2D" uid="uid://ckgqtdi4eqqec" path="res://os9/wallpapers/poolside-fm-pacific-breeze.png" id="2_0dfej"]
 [ext_resource type="StyleBox" uid="uid://yx2uvxo4off1" path="res://os9/mainmenu/mainmenu.tres" id="2_rrmxh"]
+[ext_resource type="FontFile" uid="uid://bf1rkcomkjys0" path="res://os9/fonts/pixChicago.ttf" id="4_um8l4"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -12,21 +14,20 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_ah7bm")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.6, 0.6, 0.8, 1)
+texture = ExtResource("2_0dfej")
 
 [node name="MainMenu" type="Panel" parent="."]
-custom_minimum_size = Vector2(0, 48)
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_bottom = 48.0
+offset_bottom = 40.0
 grow_horizontal = 2
 theme_override_styles/panel = ExtResource("2_rrmxh")
 
@@ -38,12 +39,14 @@ anchor_right = 1.0
 offset_left = -40.0
 offset_bottom = 40.0
 grow_horizontal = 0
-theme_override_constants/margin_top = 5
+theme_override_constants/margin_top = 0
 theme_override_constants/margin_right = 20
 
 [node name="Clock" type="Label" parent="MainMenu/MarginContainer2"]
 custom_minimum_size = Vector2(60, 0)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("4_um8l4")
+theme_override_font_sizes/font_size = 16
 text = "10:39
 "
 horizontal_alignment = 2
@@ -55,7 +58,7 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 10
+theme_override_constants/margin_top = 4
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 

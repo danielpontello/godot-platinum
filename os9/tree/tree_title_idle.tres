@@ -1,0 +1,10 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://bx8uuhed8klvk"]
+
+[ext_resource type="Texture2D" uid="uid://tclycoca00pm" path="res://os9/tree/tree_title_idle.png" id="1_7bic0"]
+
+[resource]
+texture = ExtResource("1_7bic0")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
